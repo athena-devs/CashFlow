@@ -17,4 +17,8 @@
     <ProjectReference Include="..\CashFlow.Infrastruture\CashFlow.Infrastruture.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Middleware\" />
+  </ItemGroup>
+
 </Project>
