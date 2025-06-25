@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 
 namespace CashFlow.Infrastruture.DataAccess;
-public class CashFlowDbContext : DbContext
+internal class CashFlowDbContext : DbContext
 {
     public DbSet<Expense> expenses { get; set; } // nome da tabele em minusculo
 
