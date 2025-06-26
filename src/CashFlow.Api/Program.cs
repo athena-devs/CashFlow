@@ -1,4 +1,5 @@
 using CashFlow.Api.Filters;
+using CashFlow.Infrastruture;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +11,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddMvc(option => option.Filters.Add(typeof(ExceptionFilters)));
 
+builder.Services.AddInfrastructure(); 
+
+ 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
