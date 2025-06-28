@@ -10,8 +10,8 @@ internal class ExpensesRepository : IExpensesRepository
         _dbContext = dbContext;
         
     }
-    public void Add(Expense expense)
+    public async Task Add(Expense expense)
     {
-        _dbContext.expenses.Add(expense);
+      await _dbContext.expenses.AddAsync(expense);
     }
 }
