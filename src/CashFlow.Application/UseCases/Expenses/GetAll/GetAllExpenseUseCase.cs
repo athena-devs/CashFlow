@@ -14,11 +14,11 @@ public class GetAllExpenseUseCase : IGetAllExpenseUseCase
         _mapper = mapper;
         
     }
-    public async Task<ResponseExpenseJson> Execute()
+    public async Task<ResponsesExpenseJson> Execute()
     {
         var result = await _repository.GetAll();
 
-        return new ResponseExpenseJson
+        return new ResponsesExpenseJson
         {
             Expenses = _mapper.Map<List<ResponseShortExpenseJson>>(result)
         };
