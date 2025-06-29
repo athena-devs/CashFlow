@@ -35,7 +35,7 @@ public class RegisterExpenseValidatorTests
 
         //Assert
         result.IsValid.Should().BeFalse();
-        result.Errors.Should().ContainSingle().And.Contain(e => e.ErrorMessage.Equals(ResouceErrorMessages.TITLE_ERROR));
+        result.Errors.Should().ContainSingle().And.Contain(e => e.ErrorMessage.Equals(ResourceErrorMessages.TITLE_ERROR));
 
     }
 }
