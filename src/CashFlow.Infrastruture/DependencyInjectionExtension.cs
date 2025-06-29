@@ -19,7 +19,8 @@ public static class DependencyInjectionExtension
     private static void AddRepositories(IServiceCollection services)
     {
         services.AddScoped<IUnitOfWork, UnitOfWork>(); // injeção de dependência
-        services.AddScoped<IExpensesRepository, ExpensesRepository>(); // injeção de dependência
+        services.AddScoped<IExpensesReadOnlyRepository, ExpensesRepository>(); // injeção de dependência
+        services.AddScoped<IExpensesWriteOnlyRepository, ExpensesRepository>(); // injeção de dependência
     }
 
     private static void AddDbContext(IServiceCollection services, IConfiguration configuration)
