@@ -123,6 +123,9 @@
   <data name="DATE_ERROR" xml:space="preserve">
     <value>expenses cannot be the future</value>
   </data>
+  <data name="EXPENSE_NOT_FOUND" xml:space="preserve">
+    <value>expense not found</value>
+  </data>
   <data name="PAYMENT_ERROR" xml:space="preserve">
     <value>Payment type is not valid.</value>
   </data>
